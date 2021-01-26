@@ -1723,15 +1723,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\18106\\.nuget\\packages\\": {}
+    "C:\\Users\\y.ueda\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "出席率変化の集計",
       "projectName": "出席率変化の集計",
-      "projectPath": "C:\\Users\\18106\\Documents\\UiPath\\出席率変化の集計\\.local",
-      "packagesPath": "C:\\Users\\18106\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\18106\\Documents\\UiPath\\出席率変化の集計\\.local"
+      "projectPath": "C:\\Users\\y.ueda\\Desktop\\RPAzemi2020\\出席率変化の集計\\.local",
+      "packagesPath": "C:\\Users\\y.ueda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\y.ueda\\Desktop\\RPAzemi2020\\出席率変化の集計\\.local"
     },
     "frameworks": {
       "net461": {
