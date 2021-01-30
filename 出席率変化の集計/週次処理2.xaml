@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="週次処理2" this:週次処理2.rbook="fils\出席簿集計表  コピー.xlsm" this:週次処理2.rsheet="学生名簿" this:週次処理2.wbook="fils\出席率_大橋校（３年：北村） (5).xlsx" this:週次処理2.wsheet="2年情報メディア_8月 " this:週次処理2.wcolname="G" this:週次処理2.ninzu="29" this:週次処理2.Rrowindex="7" this:週次処理2.Wrowindex="4" this:週次処理2.rcolname="AD" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="週次処理2" this:週次処理2.rsheet="学生名簿" this:週次処理2.wcolname="G" this:週次処理2.ninzu="29" this:週次処理2.Rrowindex="7" this:週次処理2.Wrowindex="4" this:週次処理2.rcolname="AD" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="rbook" Type="InArgument(x:String)" />
     <x:Property Name="rsheet" Type="InArgument(x:String)" />
@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>624,801</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1196,831</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>週次処理2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -77,6 +77,11 @@
       <Variable x:TypeArguments="ui:GenericValue[]" Name="kekka" />
       <Variable x:TypeArguments="x:Int32" Name="counter" />
       <Variable x:TypeArguments="x:Int32" Name="startcol" />
+      <Variable x:TypeArguments="x:String" Name="wcolname">
+        <Variable.Default>
+          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="”G&quot;&quot;" />
+        </Variable.Default>
+      </Variable>
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
